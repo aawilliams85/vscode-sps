@@ -1,0 +1,62 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "sps",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"begin": "{",
+			"end": "}",
+			"name": "comment.block"
+		},
+		{
+			"begin": "'",
+			"end": "\\n",
+			"name": "comment.line"
+		},
+		{
+			"match": "(?i:\\s*\\b(FALSE|TRUE)\\b)",
+			"name": "constant.language.archestra"
+		},
+		{
+            "name": "constant.numeric.float.sps",
+            "match": "(\\.\\d+([Ee][-+]\\d+)?i?)\\b|\\b\\d+\\.\\d*(([Ee][-+]\\d+)?i?\\b)?"
+        }, 
+		{
+            "name": "constant.numeric.integer.sps",
+            "match": "\\b((0x[0-9a-fA-F]+)|(0[0-7]+i?)|(\\d+([Ee]\\d+)?i?)|(\\d+[Ee][-+]\\d+i?))\\b"
+		},
+		{
+			"match": "(?i:\\b(if|elseif|else|endif|while|exit while|endwhile|for|each|in|exit for|next|return|try|catch|endtry)\\b)",
+			"name": "keyword.control.sps"
+		},
+		{
+			"match": "(?i:\\b(and|or|not)\\b)|\\+|\\-|\\*|\\/|\\=|\\==|\\<>|\\>|\\<|\\>=|\\<=|\\&",
+			"name": "keyword.operator.sps"
+		},
+		{
+			"match": "(?i:\\b(dim|as|new)\\b)",
+			"name": "storage.type.sps"
+		},
+		{
+			"match": "(?i:\\s*\\b(LogMessage|LogWarning|LogError)\\b\\s*)",
+			"name": "support.function.sps"
+		},
+		{
+			"match": "(?i:\\b(continue|case|select)\\b)",
+			"name": "invalid.illegal"
+		}
+	],
+	"repository": {
+		"strings": {
+			"name": "string.quoted.double.sps",
+			"begin": "\"",
+			"end": "\""
+		}
+	},
+	"scopeName": "source.sps"
+}

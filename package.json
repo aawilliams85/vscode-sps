@@ -1,0 +1,25 @@
+{
+  "name": "vscode-sps",
+  "displayName": "vscode-sps",
+  "description": "Syntax highlighting for System Platform .NET Quickscript",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "sps",
+      "aliases": ["sps", "sps"],
+      "extensions": [".sps"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "sps",
+      "scopeName": "source.sps",
+      "path": "./syntaxes/sps.tmLanguage.json"
+    }]
+  }
+}
