@@ -2,7 +2,7 @@
   "name": "vscode-sps",
   "displayName": "vscode-sps",
   "description": "Syntax highlighting for System Platform .NET Quickscript",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "aawilliams85",
   "repository": "https://github.com/aawilliams85/vscode-sps.git",
   "engines": {

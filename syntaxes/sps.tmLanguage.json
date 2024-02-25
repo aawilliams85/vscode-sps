@@ -43,7 +43,7 @@
 			"name": "storage.type.sps"
 		},
 		{
-			"match": "(?i:\\s*\\b(LogMessage|LogWarning|LogError)\\b\\s*)",
+			"match": "(?i:\\s*\\b(IsBad|IsGood|LogError|LogMessage|LogWarning)\\b\\s*)",
 			"name": "support.function.sps"
 		},
 		{
